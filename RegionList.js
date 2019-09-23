@@ -3,7 +3,7 @@ import './style.css';
 
 
 const RegionList = (props) =>{
-console.log(props.data);
+console.log("find..",props.data);
   return(
     
 <div className="row" >
@@ -20,6 +20,7 @@ console.log(props.data);
                   {regionR.region_name }
                 </label>
               </h4>
+              <h6> {regionR.region_name }</h6>
             </header>
 
               {regionR.countries.map(country => {
@@ -41,4 +42,4 @@ console.log(props.data);
 }
 
 const RegionList = (props) =>{
-export default OpcoList;
+export default RegionList;

@@ -19,31 +19,31 @@ class SearchOptions extends React.Component {
       cashcheckBoxValue: '',
       deletecheckBoxValue: '',
       searchValue: '',
-output:{
-levelIDorEAN:'',
-searchValue:'',
-loadedopt:'',
-cashopt:''
-}
+      output: {
+        levelIDorEAN: '',
+        searchValue: '',
+        loadedopt: '',
+        cashopt: ''
+      }
 
     }
   }
 
   searchClick = event => {
-    
-let out = {
-  
-levelIDorEAN:this.state.radioValue,
-searchValue:this.state.levelIdEanValue,
-loadedOpt:this.state.radioLoadedValue,
-compareOpt:this.state.radioComparisonValue,
-cashOpt:[this.state.cashcheckBoxValue,this.state.deletecheckBoxValue]
-}
+
+    let out = {
+
+      levelIDorEAN: this.state.radioValue,
+      searchValue: this.state.levelIdEanValue,
+      loadedOpt: this.state.radioLoadedValue,
+      compareOpt: this.state.radioComparisonValue,
+      cashOpt: [this.state.cashcheckBoxValue, this.state.deletecheckBoxValue]
+    }
 
 
-      this.props.searchUpdated(out);
-    
-    
+    this.props.searchUpdated(out);
+
+
   }
 
   levelIdChange = event => {
@@ -116,20 +116,15 @@ cashOpt:[this.state.cashcheckBoxValue,this.state.deletecheckBoxValue]
 
 
         </SearchContainer>
-        <SubHeader>Service Group Types </SubHeader>
-        <RegionCountry />
-        <ViewData />
-        <ButtonMargin>
-          <Button type="submit" onClick={this.searchClick} />
-        </ButtonMargin>
-         <SubHeader>Region/Country </SubHeader>
+        
+        <SubHeader>Region/Country </SubHeader>
         <RegionCountry />
         <ViewData />
         <ButtonMargin>
           <Button type="submit" onClick={this.searchClick} />
         </ButtonMargin>
         <SearchResults>
-          
+
         </SearchResults>
       </div>
     );

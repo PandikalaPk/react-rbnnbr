@@ -3,7 +3,7 @@ import  RegionCountryList from 'RegionCountryList';
 import './style.css';
 
 
-const Opco = (props) =>{
+const Region = (props) =>{
 console.log(props.data);
   return(
     
