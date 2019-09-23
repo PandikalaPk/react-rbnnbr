@@ -5,10 +5,10 @@ export default function CheckBoxList({ services, isCheckedAll, onCheck, opcoName
  
   const checkBoxOptions = (
     <div>
-      {services.map((service, index) => {
+      {services.map((country, index) => {
         
         return (
-          <CheckBox key={index} name={service.service_code} value={service.service_name} tick={service.checked} onCheck={(e) => onCheck(service.service_name, e.target.checked)} />
+          <CheckBox key={index} name={country.country_code} value={country.country_name} tick={country.checked} onCheck={(e) => onCheck(country.country_name, e.target.checked)} />
         );
       })}
     </div>
@@ -19,7 +19,7 @@ export default function CheckBoxList({ services, isCheckedAll, onCheck, opcoName
       <div className="card">
 
         <header className="card-header">
-          <CheckBox name="select-all" value={opcoName} tick={isCheckedAll} onCheck={(e) => onCheck('all', e.target.checked)} />
+          <CheckBox name="select-all" value={regionName} tick={isCheckedAll} onCheck={(e) => onCheck('all', e.target.checked)} />
         </header>
         {checkBoxOptions}
       </div>

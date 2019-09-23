@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import ServiceGroupType from './ServiceGroupType';
+import RegionCountry from './RegionCountry';
 import Checkbox from "./scheckbox";
 import InputBox from "./inputBox";
 import Button from "./button";
@@ -89,7 +89,7 @@ cashOpt:[this.state.cashcheckBoxValue,this.state.deletecheckBoxValue]
         <SearchContainer>
 
           <CardBox>
-            <CardBoxHeader> LevelID/EAN</CardBoxHeader>
+            <CardBoxHeader> Level ID/EAN</CardBoxHeader>
             <InputBox type="text" onChange={this.levelIdChange} />
             <Radio type="radio" name="selection" value="Level Id" defaultChecked="defaultChecked" onChange={this.radioChange} />
             <Radio type="radio" name="selection" value="EAN" onChange={this.radioChange} />
@@ -117,7 +117,7 @@ cashOpt:[this.state.cashcheckBoxValue,this.state.deletecheckBoxValue]
 
         </SearchContainer>
         <SubHeader>Service Group Types </SubHeader>
-        <ServiceGroupType />
+        <RegionCountry />
         <ViewData />
         <ButtonMargin>
           <Button type="submit" onClick={this.searchClick} />
