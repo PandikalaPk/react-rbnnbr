@@ -25,7 +25,7 @@ console.log("find..",props.data);
 
               {regionR.countries.map(country => {
                 return (
-                      <div>        
+                      <div className ="reghead">        
                       <label>
                         <input type="checkbox" />
                         {country.country_name}
@@ -41,5 +41,4 @@ console.log("find..",props.data);
   )
 }
 
-const RegionList = (props) =>{
 export default RegionList;

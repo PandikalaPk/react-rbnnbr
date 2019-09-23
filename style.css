@@ -44,7 +44,12 @@ h1, p {
     font-family:  sans-serif;
     
 }
+.reghead{
+width: 238px;
+    height: 209px;
+    overflow: scroll;
 
+    }
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
   .column {
