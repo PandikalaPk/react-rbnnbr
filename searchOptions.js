@@ -122,6 +122,12 @@ cashOpt:[this.state.cashcheckBoxValue,this.state.deletecheckBoxValue]
         <ButtonMargin>
           <Button type="submit" onClick={this.searchClick} />
         </ButtonMargin>
+         <SubHeader>Region/Country </SubHeader>
+        <RegionCountry />
+        <ViewData />
+        <ButtonMargin>
+          <Button type="submit" onClick={this.searchClick} />
+        </ButtonMargin>
         <SearchResults>
           
         </SearchResults>

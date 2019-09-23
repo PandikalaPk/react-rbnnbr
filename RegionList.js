@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import  ServiceGroupList from 'ServiceGroupList';
 import './style.css';
 
 
-const Opco = (props) =>{
+const RegionList = (props) =>{
 console.log(props.data);
   return(
     
 <div className="row" >
-        {props.data.map(servG => {
+        {props.data.map(regionR => {
 
           return (
             <div className="column">
@@ -18,15 +17,18 @@ console.log(props.data);
               <h4>
                 <label>
                   <input type="checkbox"  />
-                  {servG.service_group_name }
+                  {regionR.region_name }
                 </label>
               </h4>
             </header>
 
-              {servG.services.map(service => {
+              {regionR.countries.map(country => {
                 return (
                       <div>        
-                      <ServiceGroupList serviceObj={service} />
+                      <label>
+                        <input type="checkbox" />
+                        {country.country_name}
+                      </label>
                          </div>            )
               })}
               </div>
@@ -38,4 +40,5 @@ console.log(props.data);
   )
 }
 
-export default Opco;
+const RegionList = (props) =>{
+export default OpcoList;
