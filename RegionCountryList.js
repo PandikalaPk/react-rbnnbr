@@ -47,7 +47,7 @@ export default class RegionCountryList extends React.Component {
                 render() {
                     return (
                       <div>
-                      <CheckBoxList countries={this.state.checkList} isCheckedAll={this.state.isAllSelected} onCheck={this.onCheckBoxChange.bind(this)} regionName={this.state.opcoName} />
+                      <CheckBoxList countries={this.state.checkList} isCheckedAll={this.state.isAllSelected} onCheck={this.onCheckBoxChange.bind(this)} regionName={this.state.regionName} />
                     
                     </div>
                     );

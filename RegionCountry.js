@@ -17,8 +17,8 @@ const RegionCountry = () => {
 
   useEffect(() => {
     getDataFromAPI();
-    
-  },[]);
+
+  }, []);
 
 
   return (
