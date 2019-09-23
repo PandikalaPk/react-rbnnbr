@@ -8,7 +8,7 @@ export default function CheckBoxList({ countries, isCheckedAll, onCheck, regionN
       {countries.map((country, index) => {
         
         return (
-          <CheckBox key={index} name={country.country_code} value={country.country_name} tick={country.checked} onCheck={(e) => onCheck(country.country_name, e.target.checked)} />
+          <CheckBox key={index} name={country.country_name} value={country.country_name} tick={country.checked} onCheck={(e) => onCheck(country.country_name, e.target.checked)} />
         );
       })}
     </div>
@@ -18,7 +18,7 @@ export default function CheckBoxList({ countries, isCheckedAll, onCheck, regionN
     <div className="column">
       <div className="card">
 
-        <header className="card-header">
+        <header className="region-header">
           <CheckBox name="select-all" value={regionName} tick={isCheckedAll} onCheck={(e) => onCheck('all', e.target.checked)} />
         </header>
         {checkBoxOptions}

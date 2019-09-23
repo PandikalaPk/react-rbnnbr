@@ -59,7 +59,7 @@ width: 238px;
   }
 }
 
-.card-header {
+.region-header {
    
     margin-bottom: 0;
     padding: 6px;
@@ -72,18 +72,6 @@ width: 238px;
     font-size: medium;   
     border-radius: 3px; 
     
-}
-
-.fxeColor{
-  color:orange
-  
-}
-
-.fxgColor{
-  color:#18f118
-}
-.fxfColor{
-  color:red
 }
 
 .headerP{

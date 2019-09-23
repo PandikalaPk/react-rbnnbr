@@ -4,7 +4,6 @@ import RegionCountryList from './RegionCountryList';
 
 import './style.css';
 
-const TEST_API_URL = "https://cpmtest.app.wtcdev2.paas.fedex.com/cpm/R3/search-options-service/regionCountry";
 const API_URL = "https://cpmtest.app.wtcdev2.paas.fedex.com/cpm/R3/search-options-service/regionCountry";
 const RegionCountry = () => {
   const [info, setInfo] = useState([]);

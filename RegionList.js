@@ -13,15 +13,14 @@ console.log("find..",props.data);
             <div className="column">
             <div className="card">
 
-            <header className="card-header">
+            <header className="region-header">
               <h4>
                 <label>
                   <input type="checkbox"  />
                   {regionR.region_name }
                 </label>
               </h4>
-              <h6> {regionR.region_name }</h6>
-            </header>
+             </header>
 
               {regionR.countries.map(country => {
                 return (
@@ -30,7 +29,8 @@ console.log("find..",props.data);
                         <input type="checkbox" />
                         {country.country_name}
                       </label>
-                         </div>            )
+                         </div>            
+                         )
               })}
               </div>
             </div>
