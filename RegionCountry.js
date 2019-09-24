@@ -30,15 +30,19 @@ const RegionCountry = () => {
       <label>
         <input type="checkbox" />
         Misc
-                </label>
+       </label>
       <label>
         <input type="text" Value="Quick Search" />
       </label>
       </div>
+
+      <div>
       {info && info.regions && info.regions.map(regionR => {
         return <RegionCountryList data={regionR.countries} regionName={regionR.region_name} />
 
       })}
+      </div>
+      
     </div>
 
 
