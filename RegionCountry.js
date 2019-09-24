@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import OpcoList from './OpcoList';
+import RegionList from './RegionList';
 import RegionCountryList from './RegionCountryList';
 
 import './style.css';
@@ -22,6 +22,19 @@ const RegionCountry = () => {
 
   return (
     <div >
+    <div>
+      <label>
+        <input type="checkbox" />
+        All
+                </label>
+      <label>
+        <input type="checkbox" />
+        Misc
+                </label>
+      <label>
+        <input type="text" Value="Quick Search" />
+      </label>
+      </div>
       {info && info.regions && info.regions.map(regionR => {
         return <RegionCountryList data={regionR.countries} regionName={regionR.region_name} />
 

@@ -24,12 +24,12 @@ console.log("find..",props.data);
 
               {regionR.countries.map(country => {
                 return (
-                      <div className ="reghead">        
+                             
                       <label>
                         <input type="checkbox" />
                         {country.country_name}
                       </label>
-                         </div>            
+                                 
                          )
               })}
               </div>

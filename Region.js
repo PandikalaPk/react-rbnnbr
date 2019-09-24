@@ -8,6 +8,7 @@ console.log(props.data);
   return(
     
 <div className="row" >
+
         {props.data.map(regionR => {
 
           return (
