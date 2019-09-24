@@ -13,7 +13,7 @@ console.log(props.data);
 
           return (
             <div className="column">
-            <div className="card">
+            <div className="comp">
 
             <header className="card-header">
               <h4>

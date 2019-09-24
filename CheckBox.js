@@ -3,7 +3,7 @@ import React from 'react';
 export default function CheckBox({name, value, tick, onCheck}) {
                   return (
                   <div >
-                    <label className={value==='FXE'? 'fxeColor':value==='FXG'?'fxgColor':  value==='FXF'?'fxfColor' :'black' }>
+                    <label>
                         <input
                             name={name}
                             type="checkbox"
